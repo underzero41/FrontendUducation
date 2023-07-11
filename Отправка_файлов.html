@@ -1,0 +1,24 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Отправка файлов в HTML5</title>
+</head>
+<body>
+    <form action="http://localhost:8080/postfile.php" method="post" enctype="multipart/form-data">
+        <!-- <p>
+            <input type="file" name="file">
+        </p>
+        <p>
+            <input type="submit" value="Отправить">
+        </p> -->
+        <p>
+            <input type="file" name="file" accept=".png">
+        </p>
+        <p>
+            <input type="submit" value="Отправить">
+        </p>
+    </form>
+</body>
+</html>

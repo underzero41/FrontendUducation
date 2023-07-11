@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Валидация форм</title>
+</head>
+<body>
+    <form novalidate method="get">
+        <p>
+            <label for="login">Login: </label>
+            <input type="text" name="login" required id="login">
+        </p>
+        <p>
+            <label for="password">Password: </label>
+            <input type="password" required name="password" id="password">
+        </p>
+        <p>
+            <label for="age">Age: </label>
+            <input type="number" name="age" id="age" min="1" max="100" value="18">
+        </p>
+        <p>
+            <label for="phone">Tel: </label>
+            <input type="text" name="phone" id="phone" placeholder="+1-234-567-8901" pattern="\+\d-\d{3}-\d{4}">
+        </p>
+        <p>
+            <input type="submit" value="Send">
+        </p>
+    </form>
+</body>
+</html>
